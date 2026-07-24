@@ -216,9 +216,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-[#bfc9c3]/40">
-                <img src="/assets/atampa.png" alt="Batuul Heritage Fabrics" className="w-full h-full object-cover" />
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-2xl border border-[#bfc9c3]/40 bg-white p-3">
+                <img
+                  src="/assets/atampa.png"
+                  alt="Batuul Super Wax Atampa Heritage Fabric"
+                  className="w-full h-auto max-h-[500px] object-contain rounded-xl"
+                />
               </div>
             </div>
 
