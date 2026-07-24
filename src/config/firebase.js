@@ -3,12 +3,13 @@ import { getFirestore } from 'firebase/firestore';
 
 // Firebase configuration for project: batuul-collection
 const firebaseConfig = {
-  apiKey: "AIzaSyBatuulCollectionKey2026Mock",
+  apiKey: "AIzaSyBKeahJ4W4Rijko3Wl4We2QAI2ofw6tZmk",
   authDomain: "batuul-collection.firebaseapp.com",
   projectId: "batuul-collection",
-  storageBucket: "batuul-collection.appspot.com",
+  storageBucket: "batuul-collection.firebasestorage.app",
   messagingSenderId: "375910441180",
-  appId: "1:375910441180:web:batuulcollectionapp"
+  appId: "1:375910441180:web:a7578041bcda94c65c5419",
+  measurementId: "G-YGY09ECY7T"
 };
 
 // Initialize Firebase
