@@ -136,22 +136,25 @@ export function AdminProvider({ children }) {
     setIsAuthenticated(false);
   };
 
-  // Firestore Synchronization
+  // Firestore Synchronization (Bidirectional & Cross-Device Sync)
   useEffect(() => {
     try {
       const unsub = onSnapshot(collection(db, 'products'), (snapshot) => {
         if (!snapshot.empty) {
           const remoteProducts = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-          setProducts(prev => {
-            // Merge remote products with local state without losing items
-            const map = new Map();
-            prev.forEach(p => map.set(p.id, p));
-            remoteProducts.forEach(p => map.set(p.id, p));
-            return Array.from(map.values());
+          setProducts(remoteProducts);
+        } else {
+          // If Firestore is empty, seed it with current products so all devices sync
+          products.forEach(async (product) => {
+            try {
+              await setDoc(doc(db, 'products', product.id), product);
+            } catch (err) {
+              console.warn('Initial seeding error:', err);
+            }
           });
         }
       }, (error) => {
-        console.warn('Firestore fallback mode:', error.message);
+        console.warn('Firestore sync fallback mode active:', error.message);
       });
       return () => unsub();
     } catch (e) {
