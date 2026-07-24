@@ -13,6 +13,7 @@ export default function HomePage() {
     { name: 'Atampa', image: '/assets/atampa.png', tag: 'Traditional Wax' },
     { name: 'Lace', image: '/assets/lace.png', tag: 'Swiss Voile' },
     { name: 'Abayas', image: '/assets/abaya.png', tag: 'Silk & Velvet' },
+    { name: 'Shoes', image: '/assets/shoes.jpg', tag: 'Premium Footwear' },
     { name: 'Bags', image: '/assets/handbag.png', tag: 'Luxury Leather' },
     { name: 'Veils', image: '/assets/atampa.png', tag: 'Silk Chiffon' },
     { name: 'Perfumes', image: '/assets/handbag.png', tag: 'Royal Oud' },
