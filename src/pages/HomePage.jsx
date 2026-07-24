@@ -12,7 +12,7 @@ export default function HomePage() {
   const categoryThumbnails = [
     { name: 'Atampa', image: '/assets/atampa.png', tag: 'Traditional Wax' },
     { name: 'Lace', image: '/assets/lace.png', tag: 'Swiss Voile' },
-    { name: 'Abayas', image: '/assets/abaya_cover.jpg', tag: 'Silk & Velvet' },
+    { name: 'Abayas', image: '/assets/abaya.png', tag: 'Silk & Velvet' },
     { name: 'Bags', image: '/assets/handbag.png', tag: 'Luxury Leather' },
     { name: 'Veils', image: '/assets/atampa.png', tag: 'Silk Chiffon' },
     { name: 'Perfumes', image: '/assets/handbag.png', tag: 'Royal Oud' },
