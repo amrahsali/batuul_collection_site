@@ -248,12 +248,15 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="md:w-1/2 min-h-[280px] relative">
-          <img
-            src="/assets/atampa.png"
-            alt="Kaduna Boutique Showroom"
-            className="w-full h-full object-cover"
-          />
+        <div className="md:w-1/2 p-8 md:p-12 bg-[#003426] flex items-center justify-center relative overflow-hidden border-t md:border-t-0 md:border-l border-[#735c00]/30">
+          <div className="absolute inset-0 bg-[radial-gradient(#735c00_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
+          <div className="relative z-10 w-full max-w-sm aspect-square p-4 rounded-full bg-black/40 border-2 border-[#735c00]/50 shadow-2xl flex items-center justify-center group">
+            <img
+              src="/assets/batuul_logo_seal.jpg"
+              alt="Batuul Collections Official Seal & Contact"
+              className="w-full h-full object-cover rounded-full shadow-inner transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
         </div>
       </section>
 
